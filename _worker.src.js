@@ -1,16 +1,9 @@
-/**
- * YouTube Channel: https://youtube.com/@AM_CLUB
- * GitHub Repository: https://github.com/amclubs
- * Telegram Group: https://t.me/AM_CLUBS
- * Personal Blog: https://am.809098.xyz
- */
-
 // @ts-ignore
 import { connect } from 'cloudflare:sockets';
 
 // Generate your own UUID using the following command in PowerShell:
 // Powershell -NoExit -Command "[guid]::NewGuid()"
-let userID = '88deb2d4-96e2-448b-b9c6-6e2a5f26fc8f';
+let userID = 'a49c698c-7336-4198-8191-f0a9e9fbad85';
 
 // Proxy IPs to choose from
 let proxyIPs = [
@@ -42,6 +35,19 @@ let ipUrlTxt = [
 let ipUrlCsv = [
 	// atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FtY2x1YnMvYW0tY2YtdHVubmVsL21haW4vaXB2NC5jc3Y=')
 ];
+
+// Preferred addresses with optional TLS subscription
+let ipLocal = [
+];
+let noTLS = 'false';
+let sl = 5;
+
+let tagName = atob('YW1jbHVicw==');
+let subUpdateTime = 6; // Subscription update time in hours
+let timestamp = 4102329600000; // Timestamp for the end date (2099-12-31)
+let total = 99 * 1125899906842624; // PB (perhaps referring to bandwidth or total entries)
+let download = Math.floor(Math.random() * 1099511627776);
+let upload = download;
 
 // Network protocol type
 let network = 'ws'; // WebSocket
